@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1.
+        From Database
+    ul
+        each tst, i in test
+            li
+                a(href="mailto:#{tst.a}")= tst.b

@@ -1,0 +1,260 @@
+body
+{
+	margin: 0px auto;
+	padding: 0px;
+	background: #0f073d;
+	font:normal 16px Arial AMU;
+	font-family: Tahoma, "Arian AMU", sans-serif;
+}
+h1
+{
+	color: white;
+}
+A:link { color: white; }
+A:visited { color: white; }
+A:active { color: white; }
+A:hover { text-decoration: none; color: #fdee8a; }
+.conternt-wrapper
+{
+	width: 100%;
+	text-align: center;
+}
+.content
+{
+	width: 1120px;
+	min-height: 300px;
+	text-align: left;
+	margin: auto;
+}
+.header
+{
+	width: 100%;
+	height: 241px;
+	background: url('../img/top.png');
+}
+.top-menu
+{
+	position: relative;
+	top: -73px;
+	left: 10px;
+}
+.footer-up
+{
+	float: left;
+	width: 100%;
+	height: 84px;
+	background: url('../img/footer.png');
+	background-repeat: repeat-x;
+}
+.footer-down
+{
+	float: left;
+	width: 100%;
+	background: #090525;
+	min-height: 50px;
+	font-size: 10px;
+	color: white;
+}
+.content-down
+{
+	min-height: 50px;
+}
+.footer-houses
+{
+	position: relative;
+	width: 240px;
+	height: 197px;
+	left: 750px;
+	top: -110px;
+	background: url('../img/footer-houses.png');
+}
+.header-menu-wrapper
+{
+	float: left;
+	background: transparent;
+	padding: 1px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.header-menu-wrapper-active {
+	background: #fdee8a;
+}
+.header-menu-wrapper-tmp-active {
+	background: #fdee8a;
+}
+.header-menu-inner-wrapper
+{
+	float: left;
+	background: transparent;
+	padding: 1px;
+}
+.header-menu-inner-wrapper-active {
+	background: #110128;
+}
+.header-menu-inner-wrapper-tmp-active {
+	background: #110128;
+}
+.header-menu
+{
+	float: left;
+	padding: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	min-width: 100px;
+	background: transparent;
+	color: #ffffff;
+}
+.header-menu-active {
+	background: #fdee8a;
+	color: #110128;
+}
+.header-menu-tmp-active {
+	background: #fdee8a;
+	color: #110128;
+}
+.page-content
+{
+	float: left;
+	position: relative;
+	top: -53px;
+	width: 100%;
+	padding: 20px;
+}
+.content-left
+{
+	float: left;
+	min-width: 200px;
+	max-width: 200px;
+}
+.content-center
+{
+	float: left;
+	min-width: 635px;
+	max-width: 635px;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+.content-right
+{
+	float: left;
+	min-width: 235px;
+	max-width: 235px;
+	padding-top: 20px;
+}
+.left-box
+{
+	min-width: 184px;
+	max-width: 184px;
+	min-height: 162px;
+	max-height: 162px;
+	background: url('../img/square.png');
+	margin-top: 20px;
+}
+.left-box-title
+{
+	position: relative;
+	left: 33px;
+	top: 20px;
+	color: #fdee8a;
+}
+.subheader
+{
+	background: #fdee8a;
+	padding: 2px;
+	max-width: 1088px;
+	min-width: 1088px;
+}
+.subheader-border-inner
+{
+	background: #0f073d;
+	padding: 1px;
+}
+.subheader-inner
+{
+	background: #fdee8a;
+	color: #0f073d;
+	padding: 5px;
+}
+.star
+{
+	background: url('../img/star.png');
+	background-repeat: no-repeat;
+	color: #ffffff;
+	padding-left: 20px;
+	position: relative;
+	left: 10px;
+	font-size: 13px;
+	margin-top: 6px;
+	cursor: pointer;
+}
+.first-star
+{
+	margin-top: 26px;
+}
+.aphorism
+{
+	color: #ffffff;
+	padding-left: 5px;
+	position: relative;
+	left: 10px;
+	top: 20px;
+	font-size: 13px;
+	margin-top: 6px;
+	cursor: pointer;
+}
+.search-box
+{
+	min-width: 635px;
+	max-width: 635px;
+	min-height: 96px;
+	max-height: 96px;
+	background: url('../img/search-bg.png');
+}
+.search-input
+{
+	position: relative;
+	top: 20px;
+	left: 17px;
+	line-height: 23px;
+	width: 527px;
+	height: 23px;
+	font-size: 20px;
+}
+.search-words
+{
+	position: relative;
+	top: 30px;
+	left: 15px;
+	font-size: 15px;
+}
+.search-button
+{
+	position: relative;
+	width: 31px;
+	height: 34px;
+	left: 555px;
+	top: -31px;
+	cursor: pointer;
+}
+.armenian-check
+{
+	visibility: hidden;
+}
+.interpretation 
+{
+	background: white;
+	padding: 10px;
+	margin: 20px;
+}
+.interpretation  A:link { color: black; }
+.interpretation  A:visited { color: black; }
+.interpretation  A:active { color: black; }
+.interpretation  A:hover { text-decoration: none; color: #0000EE ; }
+.main-body 
+{
+	background: white;
+	padding: 20px;
+	margin: 20px;
+	margin-top: 0px;
+}

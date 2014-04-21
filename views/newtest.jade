@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddTest(name="addtest",method="post",action="/addtest")
+        input#inputTestName(type="text", placeholder="test name", name="testname")
+        input#inputTestValue(type="text", placeholder="test value", name="testvalue")
+        button#btnSubmit(type="submit") submit

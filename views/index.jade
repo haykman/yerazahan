@@ -1,0 +1,74 @@
+doctype html
+html(lang="en")
+  head
+    title Երազահան
+    link(rel='stylesheet', href='css/style.css')
+    script(type="text/javascript", src="js/jquery-1.8.3.min.js")
+    script(type="text/javascript", src="js/keyboard.js")
+    script(type="text/javascript", src="js/my.js")
+    script(type="text/javascript").
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-43357314-1', 'yerazahan.info');
+      ga('send', 'pageview');
+  body
+    div(id="fb-root")
+    script(type="text/javascript").
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=146884388821798";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    script(type="text/javascript").
+      initKeyboard();
+    div(class="content-wrapper")
+      div(class="content")
+        div(class="header")
+          div(class="armenian-check")
+           lavel(class="checkbox")
+             input(type="checkbox", checked="checked", id="armFlag", value="option1", style="floar:left;")
+        div(class="top-menu")
+          div(class="header-menu-wrapper")
+            div(class="header-menu-inner-wrapper")
+              div(id="index", class="header-menu")
+                Երազահան
+          div(class="header-menu-wrapper")
+            div(class="header-menu-inner-wrapper")
+              div(id="dreams-by", class="header-menu")
+                Նախաբաններ
+          div(class="header-menu-wrapper")
+            div(class="header-menu-inner-wrapper")
+              div(id="about", class="header-menu")
+                Մեր մասին
+          div(class="header-menu-wrapper")
+            div(class="header-menu-inner-wrapper")
+              div(id="contacts", class="header-menu")
+                Կոնտակտներ
+        div(class="page-content")
+          div(class="content-left")
+            div(class="left-box")
+              div(class="left-box-title")
+                Հորոսկոպներ
+              div(class="star first-star")
+                a(href="#Մանկական հորոսկոպ")
+                  Մանկական հորոսկոպ
+            div(class="left-box")
+              div(class="left-box-title").
+                &nbsp;
+              div(class="star first-star")
+                a(href="#Հոդվածներ")
+                  Հոդվածներ
+          div(class="content-center")
+            div(id="pageBody")
+          div(class="content-right")
+            div(class="fb-like-box", data-href="https://www.facebook.com/yerazahan", data-width="235", data-height="342", data-show-faces="true", data-stream="false", data-colorscheme="dark", data-border-color="white", data-header="false")
+      div(class="footer-up")  
+        div(class="footer-houses")
+      div(class="footer-down")
+        div(class="content-wrap")
+          div(class="content content-down")
+            &copy; 2013-2014 yerazahan.info
