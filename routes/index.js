@@ -61,4 +61,16 @@ router.get('/about', function(req, res) {;
     res.render('about');
 });
 
+router.get('/contacts', function(req, res) {;
+    res.render('contacts');
+});
+
+router.get('/home', function(req, res) {;
+    res.render('home');
+});
+
+router.get('/404', function(req, res) {;
+    res.render('404');
+});
+
 module.exports = router;

@@ -1,9 +1,19 @@
+var pagesMap = {
+	home : "Երազահան",
+	dreamsby : "Նախաբաններ",
+	about : "Մեր մասին",
+	contacts : "Կոնտակտներ"
+};
+
 $(document).ready(function() {
 
 	initTopMenuButons();
 
 	initLeftBoxesLinks();
 
+	$(window).on('hashchange', function(){ 
+		loadPage();
+	});
 	loadPage();
 });
 
@@ -33,64 +43,57 @@ function initTopMenuButons() {
 	});
 }
 
-function selectActiveTab() {
+function getPageFromHash() {
+	if(window.location.hash == '') {
+		return 'index';
+	}
+	for(var prop in pagesMap) {
+        if(pagesMap.hasOwnProperty(prop)) {
+             if("#" + pagesMap[prop] == window.location.hash) {
+                 return prop;
+             }
+        }
+    }
+}
 
-	if(window.location.hash == '' || window.location.hash == "#Երազահան")
-	{
-		activateTab($('#index'));
-	}
-	else if(window.location.hash == "#Նախաբաններ")
-	{
-		activateTab($('#dreams-by'));
-	}
-	else if(window.location.hash == "#Մեր մասին")
-	{
-		activateTab($('#about'));
-	}
-	else if(window.location.hash == "#Կոնտակտներ")
-	{
-		activateTab($('#contacts'));
-	}
+function selectActiveTab() {
+	activateTab($('#' + getPageFromHash()));
 }
 
 function clearActivityOfTabs() {
 	$('.header-menu').each(function() {
 		$(this).removeClass('header-menu-active');
 		$(this).parent().removeClass('header-menu-inner-wrapper-active');
-		$(this).parent().parent().removeClass('header-menu-wrapper-active');		
+		$(this).parent().parent().removeClass('header-menu-wrapper-active');
 	});
 }
 
 function activateTab(tab) {
-	$(tab).addClass('header-menu-active');
-	$(tab).parent().addClass('header-menu-inner-wrapper-active');
-	$(tab).parent().parent().addClass('header-menu-wrapper-active');
+	if($(tab)) {
+		$(tab).addClass('header-menu-active');
+		$(tab).parent().addClass('header-menu-inner-wrapper-active');
+		$(tab).parent().parent().addClass('header-menu-wrapper-active');
+	}
 }
 
 function loadPage() {
-	var page = getTemplateFromHash();
+	var page = getPageFromHash();
 
-	if(page != undefined) {
-		$.ajax({
-		    url: page,
-		    context: document.body
-		}).done(function(responce) {
-		    $('#pageBody').html(responce);
-		});
+	if(page == undefined) {
+		page = "404";
 	}
-}
 
-function getTemplateFromHash() {
-	switch(window.location.hash) {
-		case '#about':
-			return 'about';
-			break;
-	}
+	$.ajax({
+	    url: page,
+	    context: document.body
+	}).done(function(responce) {
+	    $('#pageBody').html(responce);
+	});
 }
 
 function initLeftBoxesLinks() {
 	$('.left-box').each(function() {
-	    if($(this).hasClass('star') {
+	    if($(this).hasClass('star')) {
 		    $(this).children(":first-child").click(function() {
 				window.location.hash = $(this).html();
 		    	loadPage();
